@@ -10,6 +10,7 @@ vcpkg_from_github(
         fix-include-directory.patch # vcpkg legacy decision
         fix-dependencies.patch
         fix-mingw.patch
+        disable-dynamic-when-static.patch
 )
 file(WRITE "${SOURCE_PATH}/VERSION_CURRENT" "${VERSION}")
 
